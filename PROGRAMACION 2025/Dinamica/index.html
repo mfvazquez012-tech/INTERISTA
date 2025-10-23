@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería dinámica desde carpeta IMG</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-4">
+    <h1 class="h4 mb-4 text-center">📂 Galería dinámica (carpeta IMG)</h1>
+
+    <!-- Chicos: formulario con campo y botón -->
+    <div class="row mb-4">
+      <div class="col-md-8 mx-auto">
+        <div class="input-group">
+          <!-- Campo de texto -->
+          <input type="text" id="nombreImg" class="form-control"
+                 placeholder="Escribe el nombre del archivo, ej: foto1.jpg">
+          <!-- Botón para agregar -->
+          <button id="btnAgregar" class="btn btn-success">
+            Agregar imagen
+          </button>
+        </div>
+        <small class="text-muted">
+          Chicos: las imágenes deben estar dentro de la carpeta <strong>img</strong> de su proyecto.
+        </small>
+      </div>
+    </div>
+
+    <!-- Contenedor de la galería -->
+    <div id="galeria" class="row g-3">
+      <!-- Aquí se insertarán las imágenes -->
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tu JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

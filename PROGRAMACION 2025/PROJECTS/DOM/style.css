@@ -1,0 +1,86 @@
+:root {
+  --verde-menta: hsl(158, 35%, 52%);
+  --beige: hsl(45, 66%, 81%);
+  --salmon: hsl(16, 70%, 64%);
+  --rojo: hsl(353, 74%, 54%);
+  --azul-oscuro: hsl(208, 46%, 16%);
+}
+
+body {
+  background-color: var(--beige);
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--rojo);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-brand, .nav-link, footer {
+  color: var(--rojo) 
+   !important;
+}
+.nav-link:hover {
+  text-decoration: underline; 
+  color: var(--salmon) !important;
+}
+
+/* Footer */
+footer {
+  background-color: var(--azul-oscuro);
+  color: var(--azul-oscuro);
+}
+
+/* Cards */
+.card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Botón volver arriba */
+#btnArriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--rojo);
+  color: var(--azul-oscuro);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+#btnArriba:hover {
+  background-color: var(--salmon);
+}
+
+/* Animaciones suaves */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cajas JS */
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: var(--verde-menta);
+  margin: 10px;
+}
+button {
+  margin: 5px;
+}
